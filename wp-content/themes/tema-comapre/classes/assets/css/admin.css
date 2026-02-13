@@ -1,0 +1,13 @@
+.acf-field-60e49da847777 select {
+    pointer-events: none;
+    background: #DDDDDD;
+}
+
+.acf-field-60e49c226f5a0 .acf-actions .acf-button,
+.acf-field-60e49c226f5a0 .acf-row-handle.remove {
+    display: none;
+}
+
+.acf-field-6005f287a8022.tipo-evento .acf-radio-list li:nth-child(3) {
+    display: block;
+}

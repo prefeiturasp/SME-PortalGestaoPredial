@@ -1,0 +1,35 @@
+/* Coordenadorias */
+
+@media (min-width: 768px) {
+    .coordenadorias-tabs .nav-item:nth-child(-n+5) {
+        margin-bottom: 1em;
+    }
+}
+.coordenadorias-tabs{
+    text-align: left;
+}
+
+.coordenadorias-tabs .nav-link {
+    border-bottom: 2px solid #196CBD !important;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    min-height: 65px;
+}
+
+@media (min-width: 768px) {
+    .coordenadorias-tabs .nav-link {
+        width: 222px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coordenadorias-tabs .nav-item {
+        width: 100% !important;
+    }
+}
+
+.coordenadorias-tabs .nav-link.active {
+    border-bottom: 8px solid #196CBD !important;
+    border-color: #196CBD !important;
+    font-weight: bold;
+}

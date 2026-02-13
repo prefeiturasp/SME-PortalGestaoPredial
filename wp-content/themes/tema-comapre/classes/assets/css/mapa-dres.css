@@ -1,0 +1,64 @@
+.st1{
+    fill:#E0E0E0;
+    stroke:#AAAAAA;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
+
+.st1:hover{
+    cursor: pointer;
+}
+.st2{
+    fill:#AAAAAA;
+    stroke:#AAAAAA;
+    stroke-miterlimit:10;
+}
+.on{
+    fill: #196CBD;
+}
+.mapa_dres{
+    /*border:solid 2px #AAAAAA;*/
+    margin-top: -70px;
+}
+.container-titulo-botoes{
+    background-color: #F2F2F2 !important;
+    border: 1px solid #939393 !important;
+    color: #5A5A5A !important;
+    padding: .25rem 1.25rem !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.container-titulo-botoes-on-click{
+    background-color: #939393 !important;
+    color: #fff !important;
+}
+
+.a-click-botao, .a-click-botao:hover{
+    color: #5A5A5A;
+}
+
+.a-click-botao-clicado{
+    color: #fff !important;
+}
+
+.card-body-mapa-dres{
+    padding-bottom: 0 !important;
+    border-right: 1px solid #939393 !important;
+    border-bottom: 1px solid #939393 !important;
+    border-left: 1px solid #939393 !important;
+}
+.card-body-mapa-dres p {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.titulo-blocos-de-texto{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 130%;
+    /* or 34px */
+    color: #42474A;
+}
