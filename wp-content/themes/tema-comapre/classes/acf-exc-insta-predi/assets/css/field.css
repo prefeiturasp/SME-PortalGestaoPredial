@@ -1,0 +1,13 @@
+.acf-field-exc-insta-predi .acf-label label {
+    color: #FFFFFF !important;
+}
+
+.acf-field-exc-insta-predi .btn-outline-danger {
+    border: 2px solid #B40C02;
+    color: #B40C02;
+    font-weight: bold;
+}
+
+.acf-field-exc-insta-predi .btn-outline-danger:hover{
+    color: #FFFFFF;
+}

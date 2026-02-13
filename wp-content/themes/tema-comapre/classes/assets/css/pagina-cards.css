@@ -1,0 +1,6 @@
+.bg-color-titulo-cards{
+    background-color: #196CBD !important;
+}
+.card-header-card h2 a::after {
+    content: "" !important;
+}

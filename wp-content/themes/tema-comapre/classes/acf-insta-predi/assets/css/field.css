@@ -1,0 +1,49 @@
+.acf-field-insta-predi {
+    background: #FFFFFF;
+}
+
+.post-view .acf-field-insta-predi .acf-label label{
+   color: #003560;
+   font-size: 24px;
+   font-weight: bold;
+   border-bottom: 1px solid #E9E9E9;
+   padding-bottom: 5px;
+   margin-bottom: 15px;
+}
+
+.post-view .acf-field-insta-predi .btn-new-predio {
+    background: #003560 !important;
+    border-color: #003560 !important;
+    display: table;
+    margin: 30px auto 15px;
+}
+
+.post-view .acf-field-insta-predi .badge-light {
+    color: #003560;
+    padding: 5px 10px;
+    background: rgba(0, 53, 96, 0.1);
+    border-radius: 2px;
+}
+
+.post-view .acf-field-insta-predi .action-button {
+    color: #003560;
+}
+
+.post-view .bloco-predio {
+    background: #FFFFFF;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.post-view .bloco-predio .acf-fields.-border{
+    border: 0;
+}
+
+.post-view .bloco-predio > .acf-label label {
+    font-size: 24px !important;
+    color: #003560;
+    font-weight: bold;
+    padding: 0 16px;
+}

@@ -1,0 +1,208 @@
+/* Organograma */
+
+/* Cores */
+
+.bg-cinza-claro {
+    background: rgba(242, 242, 242, 0.5);
+}
+
+.bg-cinza {
+    background: rgba(242, 242, 242, 0.4);
+}
+
+.bg-cinza-claro-organo {
+    background: #D1D1D1 !important;
+}
+
+.bg-cinza-escuro-organo {
+    background: #828282 !important;
+    color: #fff;
+}
+
+.bg-cinza-dre {
+    background: #F2F2F2 !important;
+}
+
+.bg-cinza-ativo {
+    background: #EAEAEA;
+}
+
+.bg-cinza-escuro {
+    background: #5A5A5A;
+}
+
+.bg-azul-organo {
+    background: #4F96CD !important;
+}
+
+.bg-azul-claro {
+    background: rgba(25, 108, 189, 0.4);
+}
+
+.bg-azul-escuro {
+    background: #196CBD;
+}
+
+.lista-coordenadorias .coordenadoria::before {
+    border-top: 2px solid #D1D1D1;
+    border-left: 2px solid #D1D1D1;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%) translateY(25px);
+    z-index: -1;
+    width: 85px;
+}
+
+
+.lista-coordenadorias .coordenadoria::after {
+    border-left: 2px solid #D1D1D1;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: -50%;
+    transform: translateX(-100%) translateY(25px);
+    z-index: -1;
+    width: 85px;
+}
+
+.lista-coordenadorias .coordenadoria:first-child::after {
+    border: 0 none;
+}
+
+
+.card-header h2 a::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    transform: translateX(5px);
+    display: inline-block;
+}
+
+.card-header h2 a[aria-expanded=true]::after {
+    content: "\f106";
+    font-family: "FontAwesome";
+}
+
+.card-columns{
+    column-count: 4 !important;
+}
+
+.card-colunas{
+    width: 22%;
+}
+
+.borda-itens .card {
+    min-height: 6.5em;
+    max-width: 13.3em;
+}
+
+.borda-itens .card::before,
+.borda-itens .card::after {
+    content: '';
+    height: 35px;
+    position: absolute;
+    right: 50%;
+    transform: translateY(-100%);
+    width: 100%;
+}
+
+.borda-itens:nth-child(-n+2).borda-azul-organo .card::before,
+.borda-itens:nth-child(-n+2).borda-azul-organo .card::after {
+    border-top: 2px solid #4F96CD;
+}
+
+.borda-itens:nth-child(-n+2).borda-cinza-claro-organo .card::before,
+.borda-itens:nth-child(-n+2).borda-cinza-claro-organo .card::after {
+    border-top: 2px solid #D1D1D1;
+}
+
+.borda-itens .card::after {
+    left: 50%;
+    right: auto;
+}
+
+.borda-itens.borda-azul-organo .card::after {
+    border-left: 2px solid #4F96CD;
+}
+
+.borda-itens.borda-cinza-claro-organo .card::after {
+    border-left: 2px solid #D1D1D1;
+}
+
+.borda-itens:nth-child(-n+2) .card:first-child::before,
+.borda-itens:nth-child(-n+2) .card:last-child::after {
+    border: 0 none;
+}
+
+.borda-itens .card:last-child::after {
+    border: 0 none;
+}
+
+.borda-itens.borda-azul-organo .card:last-child::before {
+    border-right: 2px solid #4F96CD;
+}
+
+.borda-itens.borda-cinza-claro-organo .card:last-child::before {
+    border-right: 2px solid #D1D1D1;
+}
+
+.borda-itens:nth-child(-n+2)::before {
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg) translateX(-210%);
+    width: 22px;
+    z-index: -1;
+}
+
+.borda-itens:nth-child(-n+2).borda-azul-organo::before {
+    background: #4F96CD;
+}
+
+.borda-itens:nth-child(-n+2).borda-cinza-claro-organo::before {
+    background: #D1D1D1;
+}
+
+
+#borda-em-l{
+    border-left: 2px solid #D1D1D1;
+    border-bottom: 2px solid #D1D1D1;
+    display: inline-block;
+    position: absolute;
+    left: -85px;
+    width: 100px;
+    height: 100px;
+    top: -68px;
+    z-index: -1;
+}
+
+.centraliza-itens{
+    justify-content: center !important;
+}
+
+@media (min-width: 576px) {
+
+    .margin-right-negativa-13{
+        margin-right: -13px !important;
+    }
+
+    .margin-right-negativa-16{
+        margin-right: -16px !important;
+    }
+}
+
+.rodape-bt-unidades-escolares{
+    background-color: #8DC1EA !important;
+    border: solid 1px #8DC1EA !important;
+}
+
+.rodape-links{
+    color: #196CBD;
+}

@@ -1,0 +1,18 @@
+/* CSS Document */
+
+.col-lg-3{
+	margin-bottom: 1rem;
+}
+.pp_titulo{
+	margin-bottom: 1.5rem;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 32px !important;
+	line-height: 37px !important;
+}
+.pp_thumbnail{
+	border-radius: 5px;
+}
+.pp_resumo{
+	color: #4C5862 !important;
+}

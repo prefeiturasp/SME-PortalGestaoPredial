@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+    gestpred:
+        restart: always
+        env_file:
+            - ../env_gestpred
+        container_name: gestpred
+        ports:
+            - '8087:80'
+        volumes:
+            - '../nfs/gestpred-dev/uploads:/var/www/html/wp-content/uploads'
+            - '../nfs/gestpred-dev/plugins:/var/www/html/wp-content/plugins'
+            - '../nfs/gestpred-dev/upgrade:/var/www/html/wp-content/upgrade'
+            - '../nfs/gestpred-dev/locationmatch:/etc/apache2/locationmatch/location_match.modsecurity'
+        image: wordpress/gestpred
+        build: 
+            dockerfile: ./Dockerfile
+            context: . 

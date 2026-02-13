@@ -1,0 +1,202 @@
+.container-menu-icones-home li{
+    border-right: solid 1px #fff;
+}
+.container-menu-icones-home li a{
+    padding: 15px;
+}
+.container-menu-icones-home li a:hover, .container-menu-icones-home li a:focus{
+    background-color: #196CBD;
+    color: #fff;
+    border-radius: 0 !important;
+}
+
+.container-menu-icones-home-mobile li{
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+.icones-home{
+    max-width: 116px !important;
+}
+
+.container-btn-mais-noticias{
+    position: absolute !important;
+    bottom: 0;
+}
+
+.img-noticias-destaques-secundarias{
+    height: 148px !important;
+}
+
+.nav-icones-menu{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ul-icones-home{
+    border: none !important;
+    margin: 0 !important;
+}
+
+.ul-icones-home li{
+    padding: 0 !important;
+    border-right: solid 1px #fff;
+}
+
+.ul-icones-home li a{
+    padding: 15px !important;
+    color: #000 !important;
+}
+
+.ul-icones-home li a:hover, .ul-icones-home li a:focus {
+    background-color: #196CBD;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.ul-icones-home li ul{
+    border: solid 1px #EAEAEA !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    top: 58px !important;
+
+}
+
+.ul-icones-home li ul li {
+    background-color: #EAEAEA !important;
+    border-bottom: 2px #fff;
+    margin-bottom: 2px;
+}
+
+.divisao-noticias-secundarias{
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.divisao-noticias-secundarias:last-child{
+    border-bottom: none !important;
+}
+
+@media ( min-width : 769px) {
+    .ul-container-icones-menu li {
+        padding-bottom: 100px !important;
+        height: 230px;
+    }
+
+    .ul-container-icones-menu li a {
+        display: inline !important;
+        position: absolute;
+        height: 100%;
+        width: 99.5%;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    .ul-container-icones-menu li a img {
+        display: inline-block;
+        padding-top: 48px !important;
+    }
+
+    .container-titulo-icones {
+        margin-top: 115px;
+    }
+}
+
+.menu-icones-home li{
+    border-right: solid 1px #fff;
+}
+
+@media ( max-width : 769px) {
+    .container-img-noticias-destaques-primaria{
+        bottom: 30px !important;
+    }
+
+    .fb-page{
+        margin-bottom: 15px;
+    }
+}
+
+.titulo-icones{
+    color: #000;
+}
+
+@media ( min-width : 769px) {
+    .container-facebook {
+        padding-top: 15px;
+        padding-bottom: 12px;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+
+    }
+
+    .fb-page{
+        margin-left: 5px;
+    }
+}
+
+.container-twitter{
+    height: 200px !important;
+    overflow: hidden;
+}
+/*noticias Destaque Primaria e Secundária*/
+.desc-img-home{
+	height: auto !important;
+}
+.desc2-img-home{
+	height: auto !important;
+}
+.bg-home-desc{
+	background: linear-gradient(to top, black, rgba(0,0,0,0.7));
+}
+.b-home{
+	padding-bottom: 0.9rem!important;
+}
+.btn-busca{
+    bottom: 15px;
+    position: absolute;
+}
+#pag-busca ul{
+    list-style:none;
+    text-align: center;
+}
+#pag-busca ul li{
+    display: inline-block;
+    background-color: #eee;
+    padding: 0.3rem;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    margin: 2px;
+    min-width: 30px !important;
+}
+#pag-busca ul a:link{
+    color: #0a0a0a;
+}
+.tab-pane {
+    background-color: rgb(236, 236, 236);
+    max-width: 1136px !important;
+}
+.bg-cinza-ativo {
+    background: none !important;
+}
+
+
+.overlay-noticia-home{
+	background: linear-gradient(to top, rgba(13,31,61,0.99), rgba(42,87,117,0.8));
+	color: #fff;
+	padding: 10px;
+	margin-top: -63px;
+}
+.overlay-noticia-home a {color:#fff !important;}
+.overlay-noticia-home a:link {color:#fff !important;}
+.overlay-noticia-home a:visited {color:#fff !important;}
+.overlay-noticia-home a:hover {color:#fff !important;}
+
+@media only screen and (max-width: 768px) {
+  .overlay-noticia-home{
+		background: linear-gradient(to top, rgba(13,31,61,0.99), rgba(42,87,117,0.8));
+		color: #fff;
+		padding: 10px;
+	  	margin: 0;
+	}
+}
