@@ -15,7 +15,18 @@ ENV APACHE_DOCUMENT_ROOT=""
 ENV FIX_WEBHOME_PERMISSION="false"
 
 # ==========================================================
+## Instalação do APM Agent
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 
+ARG APM_AGENT_VERSION=1.17.0
+
+RUN curl -L -O https://github.com/elastic/apm-agent-php/releases/download/v${APM_AGENT_VERSION}/apm-agent-php_${APM_AGENT_VERSION}_amd64.deb \
+    && dpkg -i apm-agent-php_${APM_AGENT_VERSION}_amd64.deb \
+    && rm apm-agent-php_${APM_AGENT_VERSION}_amd64.deb
+    
 # Sets the limit on the number of connections
 # that an individual child server process will handle
 ENV APACHE_MAX_CONNECTIONS_PER_CHILD="0"
@@ -73,5 +84,8 @@ RUN chmod +x /usr/local/bin/docker-php-entrypoint && dos2unix /usr/local/bin/doc
 RUN mkdir -p /etc/modsecurity/crs/before && mkdir -p /etc/modsecurity/crs/after
 COPY modsecurity/owasp-crs.conf /usr/share/modsecurity-crs/owasp-crs.load
 RUN rm -Rf phpconf modsecurity
+
+# Adiciona diretório do APM ao open_basedir
+RUN sed -i '/open_basedir\]/ s|$|:/proc/self:/opt/elastic|' /etc/php/fpm/pool.d/x-override-php-defaults.conf
 
 ENTRYPOINT [ "/usr/local/bin/docker-php-entrypoint" ]
